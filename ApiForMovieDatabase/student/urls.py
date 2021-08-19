@@ -6,7 +6,6 @@ router = routers.DefaultRouter()
 router.register(r"add_student",views.StudentView)
 
 urlpatterns = [
-    # path('add_student',views.StudentView.as_view(
-    # {'get':'list','post':'create'}) ,name="add_student"),
+    # path('add_student',views.StudentView.as_view({'get':'list', 'post':'create'}) ,name="add_student"),
     path('', include(router.urls))
 ]
